@@ -45,4 +45,7 @@ This is a first draft of managing the data coming in from any source, needs test
    - Archive: Once a request is met then use this to remove from the map
    - Delete: Only use this for datasources which aren't genuine or actionable
 
+# Open data
+The data coming into the platform can be manually pushed to HDX. We've had a conversation with thei data manager to understand the steps required to set this up.
+
 # Integration with Frontline.it home page 
