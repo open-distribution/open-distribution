@@ -12,7 +12,10 @@ From the offical intro:
 
 > Ushahidi, which translates to “testimony” in Swahili, was developed to map reports of violence in Kenya after the post-election violence in 2008. Since then, thousands have used our crowdsourcing tools to raise their voice. We’re a technology leader in Africa, headquartered in Nairobi, with a global team. We are a social enterprise that provides software and services to numerous sectors and civil society to help improve the bottom up flow of information.
 
-# Open distribution ushahidi platform deployment 
+# Open distribution on Ushahidi platform 
+
+Deployment notes
+
 A version of Ushahidi specific to UK Covid response has been deployed using the hosted option on free tier. This is running as https://frontlinehelp.ushahidi.io/.
 
 ## Configuration of the plaftform todate (please update this if changes are made)
@@ -25,7 +28,21 @@ The platform can ingest data from web forms, SMS, Twitter, Email or webhooks to 
 - Twitter Is scraping from a specific hastag , follow [link](https://frontlinehelp.ushahidi.io/settings/datasources) for config page 
 - Webforms- There are currently webforms for PPE Request, PPE Supplier. Follow [link](https://frontlinehelp.ushahidi.io/settings/surveys)
 
+Webform workflows
+Before a incoming datasource is displayed onto the map there is a task system that requires it to be assigned to a volunteer name. Without assignment the datasource will not be displayed. This is to enable verfication of the data as the suggested workflow below. Additional tasks can be added to incoming data sources by editting the [survey](https://frontlinehelp.ushahidi.io/settings/surveys)
 
 # Suggested volunteer workflow 
+This is a first draft of managing the data coming in from any source, needs testing.
+
+1. Create volunteer role (done)
+2. Creat login for each volunteer for the platform through this [link](https://frontlinehelp.ushahidi.io/settings/users) using the big yellow plus button. Needs doing. 
+3. Assign them as volunteer
+4. Volunteers can now triage incoming data, the feed for this is [here](https://frontlinehelp.ushahidi.io/views/data) 
+5. Volunteer sees data post, clicks the three dot (top right) button. This allows them to: 
+   - Edit if satisifed it's a genuine and valid request - Ie. Use this to add location from postcode in tweet and copy image from tweet to the web form. If not then next option is:
+   - Put under review - Discuss with volunteer coordinator
+   - Publish button: This puts the post on the map
+   - Archive: Once a request is met then use this to remove from the map
+   - Delete: Only use this for datasources which aren't genuine or actionable
 
 # Integration with Frontline.it home page 
