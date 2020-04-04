@@ -2,11 +2,11 @@
 
 [Ushahidi](https://www.ushahidi.com/) is an opensource humanitarian platform which is centred round a map. 
 The main components of the platform are:
-- The ability to collat/aggregatee and map data sources
+- The ability to collate/aggregatee and map data sources
 - A built in task manager which supports different types of user permissions to manage the content on the platform 
 - Integration with the United Nations Humanitarian Data platform [HDX](https://data.humdata.org/)
 
-The code can be forked from their repo or you can use their hosted deployment with customisation. Other covid response projects are already running on the platform.
+The code can be forked from their [repo](https://github.com/ushahidi) or you can use their hosted deployment with customisation. Other covid response projects are already running on the platform.
 
 From the offical intro:
 
@@ -49,3 +49,4 @@ This is a first draft of managing the data coming in from any source, needs test
 The data coming into the platform can be manually pushed to HDX. We've had a conversation with thei data manager to understand the steps required to set this up.
 
 # Integration with Frontline.it home page 
+The front end picks up one of the API end points and uses the data in json to plot pins onto the map. Documentation for API is found [here](http://preview.ushahidi.com/platform/develop/api/index.html#posts)
