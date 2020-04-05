@@ -31,6 +31,18 @@ The platform can ingest data from web forms, SMS, Twitter, Email or webhooks to 
 Webform workflows
 Before a incoming datasource is displayed onto the map there is a task system that requires it to be assigned to a volunteer name. Without assignment the datasource will not be displayed. This is to enable verfication of the data as the suggested workflow below. Additional tasks can be added to incoming data sources by editting the [survey](https://frontlinehelp.ushahidi.io/settings/surveys)
 
+### Webform config 
+
+There are three webforms as discussed on [slack](https://frontline-open-dist.slack.com/archives/C010UBYKGM6/p1586073157061400)
+1. One for careworkers - Their needs: URL - https://frontlinehelp.ushahidi.io/posts/create/6
+2. One for suppliers - Their offers: URL - https://frontlinehelp.ushahidi.io/posts/create/2 
+3. One for volunteers - To help run the platform URL - https://frontlinehelp.ushahidi.io/posts/create/5 
+4. One for data feeds - [Link](https://frontlinehelp.ushahidi.io/settings/surveys/edit/4) This will be used internally for transposing tweets to one of the above webforms
+
+These can be called on the API or theres an embed option. The config is currently that forms 1 & 2 require review by volunteer before being published. Form 3 will never be published. Form 4 is for our internally use only and long term this will get automated. 
+
+
+
 # Suggested volunteer workflow 
 This is a first draft of managing the data coming in from any source, needs testing.
 
